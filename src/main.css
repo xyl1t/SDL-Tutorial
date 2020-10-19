@@ -1,0 +1,42 @@
+* {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    margin: 1em 0px;
+}
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
+header h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
+}
+
+#content {
+    display: grid;
+    margin: 32px;
+    grid-template-columns: 33.3% 33.3% 33.3%
+}
+
+#content article {
+    display:inline;
+    border: solid 1px blue;
+}
+
+#content article img {
+    width: 100%;
+}
+
