@@ -1,0 +1,15 @@
+SDL
+ - Linking
+ - Window creation
+ - Renderer creation
+ - Texture creation
+ - Creating a pixel buffer
+
+Drawing
+ - Clearing the screen
+ - Points
+ - Rectangles
+ - Lines
+ - Circles 
+ 
+ 
