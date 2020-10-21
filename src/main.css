@@ -4,39 +4,77 @@ font-weight: 300;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color:#234A12;
+	background-image: url("../images/background-mirrored.png");
 }
 
 
 header {
-    margin: 1em 0px;
+	margin: 1em 0px;
 }
 header h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	margin: 0px;
+	color:white;
+	text-shadow: 0px 2px 1px  black;
 }
 header h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	/* text-shadow: 0px -1px 0px #000, 0px 1px 0px #fff; */
+	color: #eee;
+	text-align: center;
+	margin: 0px;
 }
 
-#content {
-    display: grid;
-    margin: 32px;
-    grid-template-columns: 33.3% 33.3% 33.3%
+#sdl, #graphics {
+	display:block;
+	width:70%;
+	margin: 0 auto;
+	color:white;
 }
 
-#content article {
-    display:inline;
-    border: solid 1px blue;
+.content {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	width:70%;
+	margin: 0 auto;
+
+	border: solid 1px white;
+	margin-bottom: 1em;;
 }
 
-#content article img {
-    width: 100%;
+.content article {
+	margin: 0.7em;
+	
+	width: 256px;
+	background-color:#fff;
 }
 
+/* #content article:nth-child(odd) {
+	background-color:black;
+} */
+
+.content article h3, .content article p {
+	padding-left: 1em;
+}
+
+.content article img {
+	display:block;
+	width: 100%;
+	margin: 0 auto;
+	/* background: linear-gradient(to bottom, #f00); */
+}
+
+@media only screen and (max-width: 1200px) { 
+.content {
+	width: 90%;
+}
+}
