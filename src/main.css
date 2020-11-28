@@ -18,16 +18,20 @@ body {
 
 
 header {
-	margin: 2em 0px;
+	padding: 0;
+	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	
+	
 }
 header h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	
 	text-align: center;
 	color:white;
 	text-shadow: 0px 2px 1px rgba(32, 32, 32, 0.7);
-	
+	margin: 0;
 }
 header h2 {
 	font-family: 'Open Sans', sans-serif;
@@ -37,6 +41,7 @@ header h2 {
 	/* text-shadow: 0px -1px 0px #000, 0px 1px 0px #fff; */
 	color: #eee;
 	text-align: center;
+	margin: 0;
 }
 
 #sdl, #graphics {
@@ -45,7 +50,7 @@ header h2 {
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
 	display:block;
-	width:70%;
+	width:85%;
 	max-width: 1140px;
 	position: relative;
 	z-index: 1;
@@ -64,7 +69,7 @@ header h2 {
 	justify-content: center;
 	background-color:rgba(150, 150, 150, 0.7);
 	border-radius: 0em 0em 0.25em 0.25em;
-	width:calc(70% - 2px);
+	width:calc(85% - 2px);
 	max-width: calc(1140px - 2px);
 	
 	margin: 0 auto;
@@ -76,7 +81,7 @@ header h2 {
 	border-left: solid 1px rgba(200, 200, 200, 1);
 	border-bottom: solid 1px rgba(200, 200, 200, 1);
 	border-right: solid 1px rgba(200, 200, 200, 1);
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 .content a {
@@ -105,10 +110,10 @@ header h2 {
 	position: relative;
 	top: 0px;
 	left: 0px;
-	transition: ease 0.15s;
+	transition: ease 0.14s;
 }
 .content article:hover {
-	top: -4px;
+	top: -5px;
 	box-shadow: 0px 4px 8px 6px rgba(32,32,32,0.3);
 }
 
@@ -144,23 +149,46 @@ header h2 {
 	max-height: 100%;
 }
 
+footer {
+	text-align: center;
+	margin: 1em 0;
+	margin-bottom: 1.5em;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+	background-color:rgba(150, 150, 150, 0.7);
+	text-shadow: 0px 2px 1px rgba(32, 32, 32, 0.7);
+	border-radius: 4px;
+	padding: 0.1em 0.3em;
+}
 
-/* Tablet size */
-@media only screen and (max-width: 1220px) { 
+/* Dekstop size */
+@media only screen and (max-width: 1350px) { 
 #sdl, #graphics {
-	width: 85%;
+	width: 860px;
 }
 .content {
-	width:calc(85% - 2px);
-}
+	width:calc(860px - 2px);
+}	
 }
 
+/* Tablet size */
+@media only screen and (max-width: 950px) { 
+#sdl, #graphics {
+	width: 580px;
+}
+.content {
+	width:calc(580px - 2px);
+}	
+}
+	
 /* Phone size */
 @media only screen and (max-width: 660px) { 
 #sdl, #graphics {
-	width: 70%;
+	width: 300px;
 }
 .content {
-	width:calc(70% - 2px);
+	width:calc(300px - 2px);
 }
 }
