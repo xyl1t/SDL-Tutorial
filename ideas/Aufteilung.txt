@@ -1,8 +1,9 @@
 SDL
  - Linking
- - Window creation
- - Renderer creation
- - Texture creation
+ - Setting up necessary stuff
+   - Window creation
+   - Renderer creation
+   - Texture creation
  - Creating a pixel buffer
 
 Drawing
@@ -11,5 +12,5 @@ Drawing
  - Rectangles
  - Lines
  - Circles 
- 
- 
+ - Triangles
+ - Interpolated triangles

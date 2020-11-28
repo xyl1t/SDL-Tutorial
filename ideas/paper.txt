@@ -1,2 +1,2 @@
 TODO: 
- * favicon: rgb interpolated triangle
+ * move to top 
