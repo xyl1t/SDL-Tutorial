@@ -17,10 +17,12 @@
 	<link rel="stylesheet" href="main.css">
 	
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+	<script>
+		document.body.classList.remove('preload')
+	</script>
 </head>
 
-<body>
-	<span id="page-start"></span>
+<body lass="page-start preload">
 	<a class="github-fork-ribbon" href="https://github.com/xyl1t/SDL-Tutorial" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
 	<header>
@@ -28,17 +30,21 @@
 			SDL2 / C
 		</h1>
 		<h2>
-			Easy to follow SDL2 tutorials using C
+			Easy to follow Graphics tutorials using C and SDL2
 		</h2>
 	</header>
 
-	<h2 id="sdl">SDL</h2>
+	<div class="title">
+		<div class="left"></div>
+		<h2 id="sdl">SDL</h2>
+		<div class="right"></div>
+	</div>
 	<div class="content">
 		<article>
-			<a href="https://www.google.com/">
+			<a href="./setting-up-sdl.html">
 				<h3>Setting up SDL</h3>
 				<div class="frame">
-					<img src="../images/SDL/SDL2Logo.png" alt="SDL2 logo"/>
+					<img class="drop-shadow-filter" src="../images/SDL/SDL2Logo.png" alt="SDL2 logo"/>
 				</div>
 			</a>	
 		</article>
@@ -60,13 +66,17 @@
 		</article>
 	</div>
 	
-	<h2 id="graphics">Graphics</h2>
+	<div class="title">
+		<div class="left"></div>
+		<h2 id="graphics">Graphics</h2>
+		<div class="right"></div>
+	</div>
 	<div class="content">
 		<article>
 			<a href="https://www.google.com">
 				<h3>Clearing the screen</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/clearing-the-screen.png" alt="clearing the screen image"/>
 				</div>
 			</a>	
 		</article>
@@ -74,7 +84,7 @@
 			<a href="https://www.google.com">
 				<h3>Points</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/points.png" alt="points image"/>
 				</div>
 			</a>	
 		</article>
@@ -82,7 +92,7 @@
 			<a href="https://www.google.com">
 				<h3>Rectangles</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/rectangles.png" alt="rectangles image"/>
 				</div>
 			</a>	
 		</article>
@@ -90,7 +100,7 @@
 			<a href="https://www.google.com">
 				<h3>Lines</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/lines.png" alt="lines image"/>
 				</div>
 			</a>	
 		</article>
@@ -98,7 +108,7 @@
 			<a href="https://www.google.com">
 				<h3>Circles</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/circles.png" alt="circles image"/>
 				</div>
 			</a>	
 		</article>
@@ -106,7 +116,7 @@
 			<a href="https://www.google.com">
 				<h3>Triangles</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/triangles.png" alt="triangles image"/>
 				</div>
 			</a>	
 		</article>
@@ -114,14 +124,14 @@
 			<a href="https://www.google.com">
 				<h3>Interpolated triangles</h3>
 				<div class="frame">
-					<img src="../images/template.jpg" alt="template image"/>
+					<img src="../images/graphics/interpolated-triangles.png" alt="interpolated triangles image"/>
 				</div>
 			</a>	
 		</article>
 	</div>
 	
 	<footer>
-		<a href="#page-start">Go to the beginning of the page</a>
+		<a href="#page-start">▲ Go to the beginning of the page ▲</a>
 	</footer>
 </body>
 
