@@ -1,9 +1,7 @@
 SDL
  - Linking
- - Setting up necessary stuff
-   - Window creation
-   - Renderer creation
-   - Texture creation
+ - Window creation
+ - Events and input
  - Creating a pixel buffer
 
 Drawing
