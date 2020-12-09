@@ -2,9 +2,9 @@
 font-family: 'Open Sans', sans-serif;
 font-weight: 300;
 }
-.preload * {
+/* .preload * {
 	transition: none !important;
-}
+} */
 
 
 body {
@@ -192,14 +192,17 @@ footer a {
 	padding: 0.1em 0.3em;
 }
 
-/* Dekstop size */
+/* Smaller Dekstop size */
 @media only screen and (max-width: 1350px) { 
 .title {
 	width: 860px;
 }
 .content {
 	width:calc(860px - 2px);
-}	
+}
+div.title div {
+	visibility: hidden;
+}
 }
 
 /* Tablet size */
@@ -213,6 +216,9 @@ footer a {
 footer a {
 	display:inline;
 }
+div.title div {
+	visibility: hidden;
+}
 }
 	
 /* Phone size */
@@ -222,5 +228,8 @@ footer a {
 }
 .content {
 	width:calc(300px - 2px);
+}
+div.title div {
+	visibility: hidden;
 }
 }
