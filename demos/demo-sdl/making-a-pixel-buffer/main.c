@@ -12,14 +12,12 @@ typedef struct Mouse {
 } Mouse;
 
 int main(int argc, char** argv) {
-	// setbuf(stdout, NULL);
 	if (SDL_Init(SDL_INIT_VIDEO)) {
 		printf("Unable to initialize SDL: %s\n", SDL_GetError());
 		return 1;
-	} else {
-		printf("SDL initialization was successful!\n");
 	}
 	
+	// Creating constant variables because we will use their value more than once
 	const int WINDOW_WIDTH = 640;
 	const int WINDOW_HEIGHT = 480;
 	const int TEXTURE_WIDTH = WINDOW_WIDTH;
@@ -49,10 +47,8 @@ int main(int argc, char** argv) {
 	SDL_Event e;
 	int alive = 1;
 	while (alive) {
-		// go through events
 		while (SDL_PollEvent(&e)) {
 			switch (e.type) {
-				// Close program when user wants to close it
 				case SDL_QUIT:
 					alive = 0;
 				break;
@@ -78,15 +74,14 @@ int main(int argc, char** argv) {
 		
 		pixels[(rand() % TEXTURE_WIDTH) + (rand() % TEXTURE_HEIGHT) * TEXTURE_WIDTH] = (rand() % 0xffffff) * 0xff + 0xff;
 		
-		
-		SDL_UpdateTexture(texture, NULL, pixels, TEXTURE_WIDTH * sizeof(uint32_t));
-		SDL_RenderClear(renderer);
-		SDL_RenderCopy(renderer, texture, NULL, NULL);
-		SDL_RenderPresent(renderer);
+		SDL_UpdateTexture(texture, NULL, pixels, TEXTURE_WIDTH * sizeof(uint32_t)); // Copy our pixels to our texture
+		SDL_RenderClear(renderer); // Clear the content of our renderer 
+		SDL_RenderCopy(renderer, texture, NULL, NULL); // Copy the data from our texture to our renderer
+		SDL_RenderPresent(renderer); // Display the content of our renderer to the window
 	}
 	
 	// Close and free resources
-	SDL_DestroyTexture(texture);
+	SDL_DestroyTexture(texture); // Don't forget to free the texture!
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
 	

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 
+// A simple struct that will contain information about the state of a mouse
 typedef struct Mouse {
 	int x;
 	int y;
@@ -10,12 +11,9 @@ typedef struct Mouse {
 } Mouse;
 
 int main(int argc, char** argv) {
-	// setbuf(stdout, NULL);
 	if (SDL_Init(SDL_INIT_VIDEO)) {
 		printf("Unable to initialize SDL: %s\n", SDL_GetError());
 		return 1;
-	} else {
-		printf("SDL initialization was successful!\n");
 	}
 	
 	SDL_Window* window = SDL_CreateWindow("SDL2 Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_ALLOW_HIGHDPI);
@@ -74,6 +72,7 @@ int main(int argc, char** argv) {
 		// Get the state of the keyboard
 		keyboard = SDL_GetKeyboardState(NULL);
 		
+		printf("Keyboard input: ");
 		if(keyboard[SDL_SCANCODE_A]) {
 			printf("a");
 		}
@@ -86,18 +85,22 @@ int main(int argc, char** argv) {
 		if(keyboard[SDL_SCANCODE_W]) {
 			printf("w");
 		}
-		fflush(stdout);
-
+		printf("\n\n");
+		
+		printf("Mouse input:\n");
+		// See if the left mouse button is down
 		if(mouse.leftButton) {
-			printf("x: %d, y: %d\n", mouse.x, mouse.y);
+			printf("Left mouse button down!\n");
+			printf("x: %d, y: %d\n", mouse.x, mouse.y); // Output the coordinates of the mouse
 		}
+		printf("\n");
 		
-		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); 	// Set global color to black
-		SDL_RenderClear(renderer); 							// Clear screen 
-		SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);	// Set new color to green
-		SDL_RenderDrawLine(renderer, 200, 100, 400, 300);	// Draw line
+		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+		SDL_RenderClear(renderer);
+		SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+		SDL_RenderDrawLine(renderer, 200, 100, 400, 300);
 		
-		SDL_RenderPresent(renderer); // View what we drew on the renderer 
+		SDL_RenderPresent(renderer);
 	}
 	
 	// Close and free resources
