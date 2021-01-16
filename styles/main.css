@@ -158,7 +158,7 @@ div.title {
 
 .content article div.frame {
 	width: 256px;
-	height: 207px;
+	height: 207px; /* subracted 49 (title height) from width */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -236,7 +236,7 @@ div.title div {
 }
 .content article div.frame {
 	width: 280px;
-	height: 231px;
+	height: 231px; /* subracted 49 (title height) from width */
 }
 
 div.title div {

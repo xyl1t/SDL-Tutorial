@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<title>Graphics with C and SDL2</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+	<link rel="icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="../styles/contentStyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/code-highlight/vs2015.css">
+	<script src="../scripts/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		document.body.classList.remove('preload')
+	</script>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Graphics with C and SDL2"/>
+	<meta name = "keywords" content = "C, SDL2, SDL, graphics, drawing, line, circle, rectangle, graphics with c, sdl graphics, software rendering"/>
+	<meta name="author" content="Marat Isaw"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+</head>
+
+<body id="page-start" class="preload">
+	<a class="github-fork-ribbon" href="https://github.com/xyl1t/SDL-Tutorial" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
+	<header>
+		<h1>
+			SDL2 / C
+		</h1>
+		<h2>
+			Easy to follow Graphics tutorials using C and SDL2
+		</h2>
+	</header>
+	
+	
+	<div class="title">
+		<div class="left"><a href="javascript:history.back()">◀ Back</a></div>
+		<h2 id="sdl">Template</h2>
+		<div class="right"></div>
+	</div>
+	<div class="content">
+		<div class="right image-with-caption" style="width:256px">
+			<img src="../images/template.jpg" alt="template">
+			<figcaption>Image description</figcaption>
+		</div>
+		<p>
+			In this case, we can’t access <span class="code-snippet">Something::s_value</span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="left image-with-caption" style="width:256px">
+			<img src="../images/template.jpg" alt="template">
+			<figcaption>Image description</figcaption>
+		</div>
+		<p style="color: white;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<pre><code class="cpp">#include &lt;stdio.h&gt;
+#include &lt;SDL2/SDL.h&gt;
+
+int main(int argc, char** argv) {
+    if (SDL_Init(SDL_INIT_VIDEO)) {
+        printf("Unable to initialize SDL: %s\n", SDL_GetError());
+        return 1;
+    }
+}</code></pre>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="image-list">
+			<div class="image-with-caption" style="width:256px">
+				<img src="../images/template.jpg" alt="template">
+				<figcaption>blah blah blah Image description</figcaption>
+				
+			</div>
+			<div class="image-with-caption" style="width:256px">
+				<img src="../images/template.jpg" alt="template">
+				<figcaption>Image description and blah blah blah</figcaption>
+			</div>
+			<div class="image-with-caption" style="width:256px">
+				<img src="../images/template.jpg" alt="template">
+				<figcaption>Image description and blah blah blah</figcaption>
+			</div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		
+		<div id="end">
+			<div id="end-1">
+				<div class="button-left">
+					<a href="#">Previous</a>
+				</div>
+				<div class="button-right">
+					<a href="#">Next</a>
+				</div>
+			</div>
+			<div id="end-2">
+				<div class="button">
+					<a href="#">Live Demo</a>
+				</div>
+				<div class="button">
+					<a href="#">Get Source</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer>
+		<a href="#page-start">▲ Go to the beginning of the page ▲</a>
+	</footer>
+</body>
+
+</html>
