@@ -206,7 +206,7 @@ div.center {
 	box-shadow: inset 0px 1px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
 	
 	position: absolute;
-    top: 2px;
+    top: 2.1px;
     right: -10px;
 
 	border-radius: 3px;
@@ -225,7 +225,7 @@ div.center {
 	box-shadow: inset -1px 0px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
 	
 	position: absolute;
-    top: 2px;
+    top: 2.1px;
     left: -10px;
 
 	border-radius: 3px;
