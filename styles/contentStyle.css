@@ -54,7 +54,7 @@ div.title {
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
 	margin: 0 auto;
@@ -83,6 +83,8 @@ div.title {
 }
 
 .content {
+	position: relative;
+	z-index: 1;
 	text-align: justify;
 	text-justify: inter-word;
 	
@@ -181,21 +183,27 @@ div.center {
 	margin-left: 0.5em;
 }
 
-.button, .button-left, .button-right {
+.button a, .button-left a, .button-right a {
 	color: white;
-	line-height: 1.2em;
+	line-height: 18px;
 	text-align: center;
     background-color: transparent;
 	background-image: linear-gradient(0deg,  hsla(0.0, 0.0%, 20.0%, 1.00) 0.0% , hsla(0.0, 0.0%, 10.0%, 1.00) 50.5% , hsla(0.0, 0.0%, 20.0%, 1.00) 50.7% , hsla(0.0, 0.0%, 30.0%, 1.00) 100.0% );
 	border: 1px solid hsla(0.0, 0.0%, 0.0%, 1.00);
-	box-shadow: 0px 1px 2px hsla(0.0, 0.0%, 0.0%, 0.50), inset 0px 1px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
+	box-shadow: /*0px 1px 2px hsla(0.0, 0.0%, 0.0%, 0.50),*/ inset 0px 1px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
 	/* width: 100px; */
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	border-radius: 3px;
 	position: relative;
+}
+.button-left a {
+	border-left: none;
+}
+.button-right a {
+	border-right: none;
 }
 .button-right a::after {
     content: "";
@@ -206,8 +214,9 @@ div.center {
 	box-shadow: inset 0px 1px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
 	
 	position: absolute;
-    top: 2.1px;
-    right: -10px;
+	z-index: -1;
+	top: 2px;
+    right: -8px;
 
 	border-radius: 3px;
 	width: 19px;
@@ -225,8 +234,9 @@ div.center {
 	box-shadow: inset -1px 0px 0px hsla(0.0, 0.0%, 100.0%, 0.15);
 	
 	position: absolute;
-    top: 2.1px;
-    left: -10px;
+	z-index: -2;
+    top: 2px;
+    left: -8px;
 
 	border-radius: 3px;
 	width: 19px;
