@@ -140,7 +140,7 @@ div.title {
 }
 .code-snippet {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    padding: 2px;
+    padding: 1px 2px;
 	background-color:#444; 
 }
 div.right {
