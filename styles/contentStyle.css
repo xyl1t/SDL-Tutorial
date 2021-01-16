@@ -27,29 +27,36 @@ body {
 	/* background: linear-gradient(to top, blue, red) fixed; */
 }
 
+
 header {
 	padding: 0;
 	margin: 0;
 	padding-top: 1em;
 	padding-bottom: 2em;
-}
-header h1 {
+	
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	margin: auto 0;
 	text-align: center;
 	color:white;
 	text-shadow: 0px 2px 1px rgba(32, 32, 32, 0.7);
-	margin: 0;
+	
 }
-header h2 {
+header h1, header h2 {
+	margin: 0;
+	font-size: revert;
+}
+header h1 a, header h2 a {
+	font-size: revert;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+header h2 {
 	font-size: 1.2em;
-	
 	/* text-shadow: 0px -1px 0px #000, 0px 1px 0px #fff; */
 	color: #eee;
-	text-align: center;
-	margin: 0;
 }
 
 div.title {
