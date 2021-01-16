@@ -2,10 +2,12 @@
 /* FIXME */
 figcaption, p, img, a {
 	font-size: 13px;
-}
-h1, h2, h3, h4, h5, h6, figcaption, p, img, a {
 	font-family: Verdana, Tahoma, sans-serif;
 	line-height: 1.25em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 body {
@@ -75,6 +77,9 @@ div.title {
 	padding: 0;
 }
 .title a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
 	text-decoration: none;
 	color:black;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
