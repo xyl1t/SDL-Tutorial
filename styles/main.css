@@ -176,6 +176,9 @@ div.title {
 img.drop-shadow-filter {
 	filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
 }
+.content .coming-soon {
+	position: absolute; top: 51px; left: 0;
+}
 footer {
 	text-align: center;
 	margin: 1em 0;
@@ -236,14 +239,22 @@ div.title div {
 .content {
 	/* width: 325px; */
 	width: 100%;
+	justify-content: center;
 }
 .content article {
-	width: 360px;
-	height: 340px;
+	width: 175px;
+	height: 175px;
+	margin: 0.2em;
 }
 .content article div.frame {
-	width: 360px;
-	height: 291px; /* subracted 49 (title height) from width */
+	width: 175px;
+	height: 142px; /* subracted 49 (title height) from width */
+}
+.content h3 {
+	font-size: 0.95em;
+}
+.content .coming-soon {
+	position: absolute; top: 41px; left: 0;
 }
 
 div.title div {
