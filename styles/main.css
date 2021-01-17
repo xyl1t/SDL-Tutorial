@@ -230,18 +230,20 @@ div.title div {
 /* Phone size */
 @media only screen and (max-width: 660px) { 
 .title {
-	width: 325px;
+	/* width: 325px; */
+	width: 100%;
 }
 .content {
-	width: 325px;
+	/* width: 325px; */
+	width: 100%;
 }
 .content article {
-	width: 280px;
-	height: 280px;
+	width: 360px;
+	height: 340px;
 }
 .content article div.frame {
-	width: 280px;
-	height: 231px; /* subracted 49 (title height) from width */
+	width: 360px;
+	height: 291px; /* subracted 49 (title height) from width */
 }
 
 div.title div {
